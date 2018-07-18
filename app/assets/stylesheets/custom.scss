@@ -45,7 +45,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $gray-light;
+  color: #a0a0a0;
 }
 
 p {
@@ -94,5 +94,18 @@ footer {
       float: left;
       margin-left: 15px;
     }
+  }
+}
+
+/* home page */
+
+.jumbotron {
+  background-image: url(../assets/silhouette.jpg);
+  height: 500px;
+  color: white;
+  padding-top: 30px;
+  .btn-primary {
+    background-color: #24a4ab;
+    border-color: #24a4ab;
   }
 }
