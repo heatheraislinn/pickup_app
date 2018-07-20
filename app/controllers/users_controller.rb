@@ -14,7 +14,7 @@ class UsersController < ApplicationController
       flash[:success] = "Welcome to PICKUP!"
       redirect_to @user
     else
-      render 'new'
+      render 'home/index'
     end
   end
   
