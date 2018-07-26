@@ -1,5 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 /* mixins, variables, etc. */
 
@@ -34,9 +36,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
-  text-align: center;
+  letter-spacing: -1px;
+  margin-bottom: 25px;
 }
 
 h2 {
@@ -51,6 +52,16 @@ h2 {
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+}
+
+.direct_title {
+  text-transform: uppercase;
+  color: white;
+  font-weight: bolder;
+  margin-top: 10px;
+  a {
+    color: white;
+  }
 }
 
 
@@ -109,6 +120,19 @@ footer {
   float: left;
   width: 100%;
   margin-top: 45px;
+}
+
+.top-buttons {
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+.btn-block {
+  height: 250px;
+}
+
+.icon-size {
+  font-size: 120px;
 }
 
 /* profile page */
@@ -181,15 +205,12 @@ input {
 /* home page */
 
 .welcome-message {
-  margin-top: 70px;
-  text-align: center;
-  h3{
-    font-size: 2em;
+  margin-top: 110px;
+  h1{
+    color: white;
+    font-size: 2.2em;
     font-weight: bolder;
     text-transform: uppercase;
-  }
-  h4 {
-    font-size: 1.1em;
   }
 }
 
@@ -198,18 +219,37 @@ input {
   padding: 35px;
 }
 
-.signup-form {
+.col-sm-6 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.panel {
   margin-top: 85px;
+  background-color: #f5f5f54f;
+  border: none;
+  border-radius: 5px;
+  .panel-heading {
+    border-radius: 1px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+    background-color: #24a4ab;
+    border-color: #24a4ab;
+    font-size: 16px;
+  }
+  .panel-body {
+    padding: 25px;
+  }
   p {
     font-size: 1.3em;
     text-transform: uppercase;
     font-weight: bold;
   }
   .form-control {
-    border-radius: 0px;
+    border-radius: 5px;
   }
   .btn {
-    border-radius: 0px;
+    border-radius: 5px;
   }
 
 }

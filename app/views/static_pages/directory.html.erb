@@ -1,0 +1,49 @@
+<% provide(:title) %>
+<% content_for :head do %>
+<style>
+  body{  
+  background: url(../assets/baseball.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
+<% end %>
+
+<div class="row top-buttons">
+  <div class="col-sm-6">
+    <button type="button" class="btn btn-primary btn-lg btn-block"
+     style="background-color: #24a4ab6b; border:none;"><i class="fas 
+     fa-football-ball icon-size"></i>
+      <div class="direct_title"><%= link_to "Find Games", games_path %></div>
+    </button>
+  </div>
+  <div class="col-sm-6">
+    <button type="button" class="btn btn-primary btn-lg btn-block"
+     style="margin-left:5px; background-color: #6d6d6d94; border: none;">
+     <i class="fas fa-comments icon-size"></i>
+      <div class="direct_title"><%= link_to "Messages", '#' %></div>
+    </button>
+  </div>
+</div>
+
+<div class="row bottom-buttons">
+  <div class="col-sm-6">
+    <button type="button" class="btn btn-primary btn-lg btn-block"
+     style="background-color: #a5a5a5a6; border: none;"><i class="fas 
+     fa-address-card icon-size"></i>
+     <div class="direct_title"><%= link_to "Profile", current_user %></div>
+    </button>
+  </div>
+  <div class="col-sm-6">
+    <button type="button" class="btn btn-primary btn-lg btn-block"
+     style="margin-left:5px; background-color: #000000ab; border: none;"
+     ><i class="fas fa-cogs icon-size"></i>
+     <div class="direct_title"><%= link_to "Settings", 
+     edit_user_path(current_user) %></div>
+    </button>
+  </div>
+</div>
+
+

@@ -5,4 +5,10 @@ class StaticPagesController < ApplicationController
 
   def contact
   end
+  
+  def directory
+  end
+  
+  def games
+  end
 end
